@@ -6844,9 +6844,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
-  /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
-   * colors used in the theme as well. */
-  --jp-shadow-base-lightness: 32;
+  --jp-shadow-base-lightness: 0;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -6900,10 +6898,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-700);
-  --jp-border-color1: var(--md-grey-700);
-  --jp-border-color2: var(--md-grey-800);
-  --jp-border-color3: var(--md-grey-900);
+  --jp-border-color0: var(--md-grey-400);
+  --jp-border-color1: var(--md-grey-400);
+  --jp-border-color2: var(--md-grey-300);
+  --jp-border-color3: var(--md-grey-200);
   --jp-inverse-border-color: var(--md-grey-600);
   --jp-border-radius: 2px;
 
@@ -6932,20 +6930,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
-  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
-  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
+  --jp-ui-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
-  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
 
   /* Content Fonts
    *
@@ -6973,11 +6971,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
-  --jp-content-font-color1: rgba(255, 255, 255, 1);
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
-  --jp-content-link-color: var(--md-blue-300);
+  --jp-content-font-color0: rgba(0, 0, 0, 1);
+  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-content-link-color: var(--md-blue-900);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -7008,10 +7006,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #111;
-  --jp-layout-color1: var(--md-grey-900);
-  --jp-layout-color2: var(--md-grey-800);
-  --jp-layout-color3: var(--md-grey-700);
+  --jp-layout-color0: white;
+  --jp-layout-color1: white;
+  --jp-layout-color2: var(--md-grey-200);
+  --jp-layout-color3: var(--md-grey-400);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -7020,40 +7018,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: white;
-  --jp-inverse-layout-color1: white;
-  --jp-inverse-layout-color2: var(--md-grey-200);
-  --jp-inverse-layout-color3: var(--md-grey-400);
+  --jp-inverse-layout-color0: #111;
+  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color2: var(--md-grey-800);
+  --jp-inverse-layout-color3: var(--md-grey-700);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-700);
-  --jp-brand-color1: var(--md-blue-500);
+  --jp-brand-color0: var(--md-blue-900);
+  --jp-brand-color1: var(--md-blue-700);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
-  --jp-accent-color0: var(--md-green-700);
-  --jp-accent-color1: var(--md-green-500);
+  --jp-accent-color0: var(--md-green-900);
+  --jp-accent-color1: var(--md-green-700);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-700);
-  --jp-warn-color1: var(--md-orange-500);
+  --jp-warn-color0: var(--md-orange-900);
+  --jp-warn-color1: var(--md-orange-700);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-700);
-  --jp-error-color1: var(--md-red-500);
+  --jp-error-color0: var(--md-red-900);
+  --jp-error-color1: var(--md-red-700);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-700);
-  --jp-success-color1: var(--md-green-500);
+  --jp-success-color0: var(--md-green-900);
+  --jp-success-color1: var(--md-green-700);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-700);
-  --jp-info-color1: var(--md-cyan-500);
+  --jp-info-color0: var(--md-cyan-900);
+  --jp-info-color1: var(--md-cyan-700);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -7063,8 +7061,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--jp-layout-color1);
-  --jp-cell-editor-border-color: var(--md-grey-700);
+  --jp-cell-editor-background: var(--md-grey-100);
+  --jp-cell-editor-border-color: var(--md-grey-300);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -7072,8 +7070,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 1;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-300);
+  --jp-cell-prompt-not-active-opacity: 0.5;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -7087,7 +7085,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
+  --jp-notebook-multiselected-color: var(--md-blue-50);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -7102,13 +7100,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
-  --jp-rendermime-table-row-background: var(--md-grey-900);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-error-background: #fdd;
+  --jp-rendermime-table-row-background: var(--md-grey-100);
+  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+  --jp-dialog-background: rgba(0, 0, 0, 0.25);
 
   /* Console specific styles */
 
@@ -7116,12 +7114,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color2);
+  --jp-toolbar-border-color: var(--jp-border-color1);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--jp-layout-color0);
+  --jp-toolbar-active-background: var(--md-grey-300);
 
   /* Statusbar specific styles */
 
@@ -7130,43 +7128,43 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color0);
-  --jp-input-hover-background: var(--jp-layout-color2);
-  --jp-input-background: var(--md-grey-800);
+  --jp-input-active-background: var(--jp-layout-color1);
+  --jp-input-hover-background: var(--jp-layout-color1);
+  --jp-input-background: var(--md-grey-100);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--jp-layout-color2);
-  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
+  --jp-editor-selected-background: #d9d9d9;
+  --jp-editor-selected-focused-background: #d7d4f0;
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: var(--md-green-500);
-  --jp-mirror-editor-atom-color: var(--md-blue-300);
-  --jp-mirror-editor-number-color: var(--md-green-400);
-  --jp-mirror-editor-def-color: var(--md-blue-600);
-  --jp-mirror-editor-variable-color: var(--md-grey-300);
-  --jp-mirror-editor-variable-2-color: var(--md-blue-500);
-  --jp-mirror-editor-variable-3-color: var(--md-green-600);
-  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
-  --jp-mirror-editor-property-color: var(--md-blue-400);
+  --jp-mirror-editor-keyword-color: #008000;
+  --jp-mirror-editor-atom-color: #88f;
+  --jp-mirror-editor-number-color: #080;
+  --jp-mirror-editor-def-color: #00f;
+  --jp-mirror-editor-variable-color: var(--md-grey-900);
+  --jp-mirror-editor-variable-2-color: rgb(0, 54, 109);
+  --jp-mirror-editor-variable-3-color: #085;
+  --jp-mirror-editor-punctuation-color: #05a;
+  --jp-mirror-editor-property-color: #05a;
   --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ff7070;
-  --jp-mirror-editor-string-2-color: var(--md-purple-300);
+  --jp-mirror-editor-string-color: #ba2121;
+  --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #a2f;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: var(--md-green-600);
+  --jp-mirror-editor-builtin-color: #008000;
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: var(--md-green-700);
-  --jp-mirror-editor-attribute-color: var(--md-blue-700);
-  --jp-mirror-editor-header-color: var(--md-blue-500);
-  --jp-mirror-editor-quote-color: var(--md-green-300);
-  --jp-mirror-editor-link-color: var(--md-blue-700);
+  --jp-mirror-editor-tag-color: #170;
+  --jp-mirror-editor-attribute-color: #00c;
+  --jp-mirror-editor-header-color: blue;
+  --jp-mirror-editor-quote-color: #090;
+  --jp-mirror-editor-link-color: #00c;
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
@@ -7176,17 +7174,17 @@ all of MD as it is not optimized for dense, information rich UIs.
     and the icon of the user.
   */
 
-  --jp-collaborator-color1: #ad4a00;
-  --jp-collaborator-color2: #7b6a00;
-  --jp-collaborator-color3: #007e00;
-  --jp-collaborator-color4: #008772;
-  --jp-collaborator-color5: #0079b9;
-  --jp-collaborator-color6: #8b45c6;
-  --jp-collaborator-color7: #be208b;
+  --jp-collaborator-color1: #ffad8e;
+  --jp-collaborator-color2: #dac83d;
+  --jp-collaborator-color3: #72dd76;
+  --jp-collaborator-color4: #00e4d0;
+  --jp-collaborator-color5: #45d4ff;
+  --jp-collaborator-color6: #e2b1ff;
+  --jp-collaborator-color7: #ff9de6;
 
   /* Vega extension styles */
 
-  --jp-vega-background: var(--md-grey-400);
+  --jp-vega-background: white;
 
   /* Sidebar-related styles */
 
@@ -7194,28 +7192,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-off-opacity: 0.5;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(255, 225, 0);
+  --jp-search-selected-match-background-color: rgb(245, 200, 0);
   --jp-search-selected-match-color: black;
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
-
-  /* scrollbar related styles. Supports every browser except Edge. */
-
-  /* colors based on JetBrain's Darcula theme */
-
-  --jp-scrollbar-background-color: #3f4244;
-  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
-
-  /* hacks for setting the thumb shape. These do nothing in Firefox */
-
-  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
-  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600);
@@ -7237,15 +7222,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* File or activity icons and switch semantic variables */
   --jp-jupyter-icon-color: #f37626;
   --jp-notebook-icon-color: #f37626;
-  --jp-json-icon-color: var(--md-orange-500);
-  --jp-console-icon-background-color: var(--md-blue-500);
+  --jp-json-icon-color: var(--md-orange-700);
+  --jp-console-icon-background-color: var(--md-blue-700);
   --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-200);
-  --jp-terminal-icon-color: var(--md-grey-800);
-  --jp-text-editor-icon-color: var(--md-grey-200);
-  --jp-inspector-icon-color: var(--md-grey-200);
+  --jp-terminal-icon-background-color: var(--md-grey-800);
+  --jp-terminal-icon-color: var(--md-grey-200);
+  --jp-text-editor-icon-color: var(--md-grey-700);
+  --jp-inspector-icon-color: var(--md-grey-700);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-700);
+  --jp-switch-true-position-color: var(--md-orange-900);
 }
 </style>
 <style type="text/css">
@@ -7489,16 +7474,16 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=initial_id">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="c1"># import cudf</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># import cudf</span>
 
 <span class="c1"># %load_ext cudf.pandas</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -7540,10 +7525,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -7554,14 +7539,17 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">VERBOSE</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">VERBOSE</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">'dark'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'pastel'</span><span class="p">)</span>
 
 <span class="n">utils</span><span class="o">.</span><span class="n">pandas_config</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span>
 <span class="n">utils</span><span class="o">.</span><span class="n">plt_config</span><span class="p">(</span><span class="n">plt</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">'dark'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'pastel'</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">'darkgrid'</span><span class="p">)</span><span class="c1">#, palette='pastel')</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">"fivethirtyeight"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7573,10 +7561,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">xg_boost_params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"device"</span><span class="p">:</span> <span class="s2">"cuda"</span><span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">xg_boost_params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"device"</span><span class="p">:</span> <span class="s2">"cuda"</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -7587,10 +7575,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">data_loader</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">data_loader</span><span class="p">)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data_loader</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">inc_players</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">data_process</span><span class="p">)</span>
@@ -7657,10 +7645,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">leicester_matches</span> <span class="o">=</span> <span class="n">full_df</span><span class="p">[</span><span class="n">full_df</span><span class="p">[</span><span class="s2">"team_id"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">8197</span><span class="p">]</span>
     <span class="n">leicester_matches</span> <span class="o">=</span> <span class="n">leicester_matches</span><span class="p">[</span>
         <span class="n">leicester_matches</span><span class="p">[</span><span class="s2">"season_start_year"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2015</span>
@@ -7686,10 +7674,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="c1"># XGBoost only support classes starting from 0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># XGBoost only support classes starting from 0</span>
 <span class="n">full_df_model</span> <span class="o">=</span> <span class="n">full_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">full_df_model</span><span class="p">[</span><span class="s2">"result"</span><span class="p">]</span> <span class="o">=</span> <span class="n">full_df_model</span><span class="p">[</span><span class="s2">"result"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 </pre></div>
@@ -7702,10 +7690,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7716,7 +7704,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;module 'workbench.src.feature_select' from '/home/paulius/data/projects/football_m2_s4/workbench/src/feature_select.py'&gt;</pre>
 </div>
@@ -7728,10 +7716,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">model_config</span><span class="p">)</span>
 <span class="n">feature_set__map</span> <span class="o">=</span> <span class="n">model_config</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
 </pre></div>
@@ -7747,7 +7735,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">feature_select</span><span class="p">)</span>
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">shared</span><span class="p">)</span>
@@ -7938,10 +7926,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="c1"># confusion_matrices</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># confusion_matrices</span>
 </pre></div>
 </div>
 </div>
@@ -7952,10 +7940,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="c1"># CUDA: 17.6s</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># CUDA: 17.6s</span>
 <span class="c1"># CPU: 1min 57.2ms</span>
 
 <span class="n">results_table</span> <span class="o">=</span> <span class="p">{}</span>
@@ -8038,10 +8026,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">metrics_df</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">metrics_df</span>
 </pre></div>
 </div>
 </div>
@@ -8052,7 +8040,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8157,10 +8145,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">confusion_matrices</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">display</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
         <span class="n">display</span><span class="p">(</span><span class="n">confusion_matrices</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">metrics</span><span class="p">)</span>
@@ -8185,10 +8173,14 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+
+
+<span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<span class="c1"># sns.set_theme(style='dark', palette='pastel')</span>
 
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">confusion_matrices</span><span class="p">)</span>
 <span class="n">columns</span> <span class="o">=</span> <span class="mi">2</span>
@@ -8259,10 +8251,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Probability of game ending in a draw"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Probability of game ending in a draw"</span><span class="p">)</span>
 <span class="n">overall_prob</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
     <span class="p">{</span><span class="s2">"Probability"</span><span class="p">:</span> <span class="p">[</span><span class="n">full_df</span><span class="p">[</span><span class="s2">"result"</span><span class="p">]</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()]},</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"Overall"</span><span class="p">]</span>
 <span class="p">)</span>
@@ -8376,10 +8368,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 
@@ -8450,10 +8442,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">benchmark_model_target_log</span> <span class="o">=</span> <span class="s2">"Logistic | Team Rating + Home"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">benchmark_model_target_log</span> <span class="o">=</span> <span class="s2">"Logistic | Team Rating + Home"</span>
 <span class="n">cm_model_test_last_log</span><span class="p">:</span> <span class="n">ModelTrainingResult</span> <span class="o">=</span> <span class="n">confusion_matrices</span><span class="p">[</span>
     <span class="n">benchmark_model_target_log</span>
 <span class="p">]</span>
@@ -8472,10 +8464,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8497,10 +8489,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 
 <span class="n">feature_importances</span> <span class="o">=</span> <span class="n">cm_model_test_last_xgb</span><span class="o">.</span><span class="n">feature_importances</span>
 <span class="n">graph</span><span class="o">.</span><span class="n">render_feature_importances_chart</span><span class="p">(</span>
@@ -8566,10 +8558,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">full_df</span><span class="p">[[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">full_df</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="s2">"odds"</span> <span class="ow">in</span> <span class="n">c</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">"result"</span><span class="p">]][</span>
         <span class="s2">"result"</span>
     <span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -8583,10 +8575,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
     <span class="n">validation</span><span class="o">.</span><span class="n">calculate_brier_score</span><span class="p">(</span><span class="n">full_df</span><span class="p">)</span>
 </pre></div>
@@ -8599,10 +8591,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
     <span class="n">simulation</span><span class="o">.</span><span class="n">calculate_company_profit</span><span class="p">(</span><span class="n">full_df</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
 </pre></div>
@@ -8615,10 +8607,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">log_model_probs</span> <span class="o">=</span> <span class="n">cm_model_test_last_log</span><span class="o">.</span><span class="n">probabilities_match_id</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">log_model_probs</span> <span class="o">=</span> <span class="n">cm_model_test_last_log</span><span class="o">.</span><span class="n">probabilities_match_id</span>
 <span class="n">xgb_model_probs</span> <span class="o">=</span> <span class="n">cm_model_test_last_xgb</span><span class="o">.</span><span class="n">probabilities_match_id</span>
 </pre></div>
 </div>
@@ -8630,25 +8622,25 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">full_df</span><span class="p">[</span><span class="n">full_df</span><span class="p">[</span><span class="s2">"match_api_id"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2060427</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=674f896bc8ab324a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=674f896bc8ab324a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
 <span class="n">probs_benchmark_log</span> <span class="o">=</span> <span class="n">validation</span><span class="o">.</span><span class="n">benchmark_model_probs</span><span class="p">(</span><span class="n">log_model_probs</span><span class="p">,</span> <span class="n">full_df_model</span><span class="p">)</span>
 <span class="n">probs_benchmark_xgb</span> <span class="o">=</span> <span class="n">validation</span><span class="o">.</span><span class="n">benchmark_model_probs</span><span class="p">(</span><span class="n">xgb_model_probs</span><span class="p">,</span> <span class="n">full_df_model</span><span class="p">)</span>
 
@@ -8666,15 +8658,31 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/home/paulius/data/projects/football_m2_s4/workbench/src/validation.py:128: FutureWarning: Support for multi-dimensional indexing (e.g. `obj[:, None]`) is deprecated and will be removed in a future version.  Convert to a numpy array before indexing instead.
+  combined_df[["prob_win", "prob_draw", "prob_loss"]] /= total_prob[:, None]
+/home/paulius/data/projects/football_m2_s4/workbench/src/validation.py:128: FutureWarning: Support for multi-dimensional indexing (e.g. `obj[:, None]`) is deprecated and will be removed in a future version.  Convert to a numpy array before indexing instead.
+  combined_df[["prob_win", "prob_draw", "prob_loss"]] /= total_prob[:, None]
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=80ab0a0cb7288baa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">probs_benchmark_log</span>
 </pre></div>
 </div>
@@ -8686,10 +8694,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">probs_benchmark_xgb</span>
 </pre></div>
 </div>
@@ -8701,10 +8709,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 <span class="n">graph</span><span class="o">.</span><span class="n">render_by_league_beanchmark_scores</span><span class="p">(</span>
     <span class="n">probs_benchmark_log</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s2">"log_loss"</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="n">benchmark_model_target_log</span>
 <span class="p">)</span>
@@ -8773,10 +8781,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 <span class="n">graph</span><span class="o">.</span><span class="n">plot_threshold_metrics</span><span class="p">(</span>
     <span class="n">cm_model_test_last_log</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="n">benchmark_model_target_log</span>
 <span class="p">)</span>
@@ -8823,10 +8831,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">validation</span><span class="p">)</span>
 <span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">graph</span><span class="p">)</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mf">0.9</span>  <span class="c1"># Probability threshold, include only rows where any prob. is higher than T.</span>
 
@@ -8886,10 +8894,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">subset_probs</span> <span class="o">=</span> <span class="n">filtered_model_training_result</span><span class="o">.</span><span class="n">probabilities_match_id</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">subset_probs</span> <span class="o">=</span> <span class="n">filtered_model_training_result</span><span class="o">.</span><span class="n">probabilities_match_id</span>
 
 <span class="k">if</span> <span class="n">VERBOSE</span><span class="p">:</span>
     <span class="n">validation</span><span class="o">.</span><span class="n">benchmark_model_probs</span><span class="p">(</span><span class="n">subset_probs</span><span class="p">,</span> <span class="n">full_df_model</span><span class="p">,</span> <span class="n">by_league</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -8943,10 +8951,10 @@ Comparing Models: Lower log loss values are better. When comparing models, the o
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">importlib</span><span class="o">.</span><span class="n">reload</span><span class="p">(</span><span class="n">simulation</span><span class="p">)</span>
 <span class="n">bet_strats</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"Naive"</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span><span class="n">use_kelly</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
     <span class="s2">"Use (adjusted) Kelly Criterion"</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span><span class="n">use_kelly</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
